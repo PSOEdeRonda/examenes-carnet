@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exámenes de Conducir en Riesgo - Acción Ciudadana</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Fuente y Estilos -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fondo gris muy claro */
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(185, 28, 28, 0.5), 0 4px 6px -2px rgba(185, 28, 28, 0.1);
+        }
+        /* Definición de la animación pulse para el titular */
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.8;
+          }
+        }
+        .animate-pulse {
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        /* Estilo para el mensaje de copia */
+        #copy-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-green: 700;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- HERO SECTION: IMPACTO CIUDADANO -->
+    <header class="bg-gray-900 text-white pt-10 pb-20 md:pt-16 md:pb-32 relative overflow-hidden shadow-2xl">
+        <!-- Fondo con patrón sutil -->
+        <div class="absolute inset-0 bg-repeat opacity-5" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"2\" fill=\"%23ffffff\"/></svg>');"></div>
+        
+        <div class="container mx-auto px-6 max-w-4xl text-center relative z-10">
+            <!-- TITULAR SEPARADO: ¡ALERTA! -->
+            <div class="text-2xl sm:text-3xl font-black text-red-500 mb-2 md:mb-4 animate-pulse uppercase tracking-widest">
+                ¡ALERTA!
+            </div>
+            <!-- Titular Principal Modificado -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                Ronda <span class="text-blue-400">PIERDE</span> los Exámenes de Conducir.
+            </h1>
+            <!-- Subtítulo - La alcaldesa (PP) es la causa, se relaciona con AZUL -->
+            <p class="text-xl sm:text-2xl font-light text-gray-200 mb-8">
+                La alcaldesa (<strong class="text-blue-400">PP</strong>) de Ronda se niega a invertir los <strong>25.000€</strong> necesarios para que la DGT siga llevando a cabo sus exámenes en nuestra ciudad.
+            </p>
+            
+            <!-- Llamada a la Acción Principal (para ciudadanos) - ROJO para ACCIÓN -->
+            <a href="#accion" class="cta-button inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg uppercase tracking-wider">
+                EXIGE UNA SOLUCIÓN AHORA
+            </a>
+            <p class="mt-4 text-sm text-gray-400">Solo un pequeño esfuerzo político puede evitar este problema social.</p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN 2: EL PROBLEMA DIRECTO (Desplazamiento y Coste) - COLOR AZUL para LA NEGATIVIDAD (PP) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">¿CÓMO TE AFECTA ESTO?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- Tarjeta 1: Desplazamiento - AZUL -->
+                <div class="bg-blue-50 border-t-4 border-blue-600 rounded-xl p-8 shadow-xl text-center">
+                    <div class="text-blue-600 mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 16.5A3.5 3.5 0 0 0 8.5 13a3.5 3.5 0 0 0 7 0A3.5 3.5 0 0 0 12 16.5Z"/><path d="M12 2A9 9 0 0 1 21 11c0 7-9 11-9 11S3 18 3 11A9 9 0 0 1 12 2Z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Desplazamiento Obligado</h3>
+                    <p class="text-gray-600 text-left">
+                        Si los exámenes se suspenden, los aspirantes tendrán que viajar <strong class="text-blue-800">hasta Málaga capital</strong> para examinarse.
+                    </p>
+                    <!-- Alineación de lista ajustada a la izquierda para mejor lectura -->
+                    <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2 text-left">
+                        <li>⏱️ Horas perdidas en la carretera.</li>
+                        <li>⛽ Aumento del coste en gasolina/transporte.</li>
+                        <li>📉 Menor disponibilidad de fechas de examen.</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 2: Desigualdad - AZUL -->
+                <div class="bg-blue-100 border-t-4 border-blue-800 rounded-xl p-8 shadow-xl text-center">
+                    <div class="text-blue-800 mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet"><path d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0 0 4h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M11 15h3"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Un Coste Injusto para Familias</h3>
+                    <p class="text-gray-600 text-left">
+                        La negativa municipal a invertir castiga doblemente a las comarcas. La consecuencia para las familias que buscan obtener el carné es grande.
+                    </p>
+                    <!-- Alineación de lista ajustada a la izquierda para mejor lectura -->
+                    <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2 text-left">
+                        <li>💵 Más gastos para obtener el carné.</li>
+                        <li>🏘️ Desigualdad territorial frente a la capital.</li>
+                        <li>💔 Retrasos en la independencia de los jóvenes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: EL DOBLE BLOQUEO (VOTO EN CONTRA) - COLOR AZUL para LA NEGATIVIDAD (PP) -->
+    <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <!-- Título que denuncia el voto en contra, específico sobre el PP -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-blue-800">
+                EL <span class="text-blue-600">DOBLE BLOQUEO</span>: EL VOTO DEL <span class="text-blue-600">PP</span> EN DIPUTACIÓN
+            </h2>
+            
+            <!-- Bloque de la Moción Rechaazada - ROJO (Moción como intento de solución) -->
+            <div class="bg-red-50 rounded-xl shadow-2xl p-8 md:p-12 border-l-8 border-red-600">
+                <blockquote class="text-xl md:text-2xl font-medium italic text-gray-700 leading-relaxed">
+                    "Instar a la Diputación Provincial de Málaga a que asuma el coste del equipamiento informático y las conexiones [...] para el aula de titularidad municipal existente en Ronda."
+                </blockquote>
+                <p class="mt-6 text-right text-lg font-semibold text-gray-900">— La Moción de Rescate del Grupo Socialista</p>
+            </div>
+
+            <div class="mt-12 text-center bg-blue-50 p-6 rounded-lg border border-blue-200 shadow-md">
+                <!-- Título modificado -->
+                <p class="text-xl text-gray-800 mb-4 font-bold">
+                    DOS INSTITUCIONES, EL MISMO <span class="text-blue-600">PP</span>:
+                </p>
+                <!-- Texto donde se ha aplicado el color rojo al PSOE -->
+                <p class="text-lg text-gray-600 mb-3">
+                    A pesar de que el <strong class="text-red-600">PSOE</strong> llevó a Pleno la moción de rescate, el <strong class="text-blue-600">Partido Popular (PP)</strong>, con mayoría en la Diputación, <strong class="text-blue-700">ha rechazado votar a favor</strong> de la inversión de 25.000€.
+                </p>
+                <p class="text-lg text-gray-600 mt-3">
+                    El resultado es el mismo: la alcaldesa de Ronda (<strong class="text-blue-600">PP</strong>) se niega a invertir, y la mayoría del <strong class="text-blue-600">PP</strong> en Diputación se niega a rescatar el servicio. Los exámenes se pierden.
+                </p>
+                <a href="https://bit.ly/moción-antequera-ronda" target="_blank" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold text-base border-b border-blue-600 hover:border-blue-800 transition duration-300">
+                    Ver el texto de la moción que rechazaron &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: LLAMADA A LA ACCIÓN CIUDADANA - ROJO para ACCIÓN -->
+    <section id="accion" class="py-16 md:py-20 bg-red-600 text-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">¡QUE NO CIERREN NUESTROS CENTROS!</h2>
+            <p class="text-xl font-light mb-8">
+                El futuro de los exámenes está en peligro. Tu voz es la única herramienta que puede forzar a la Diputación a reconsiderar su voto.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Tarjeta 1: Email (con funcionalidad de copia) -->
+                <div onclick="copyEmailToClipboard('grupopp@malaga.es', event)"
+                   class="cursor-pointer block bg-white text-gray-900 p-6 rounded-xl shadow-2xl transition duration-300 hover:scale-[1.03] hover:shadow-2xl hover:bg-gray-50">
+                    <span class="text-4xl mb-3 block">✉️</span>
+                    <h3 class="text-xl font-bold mb-2">Escribe al Grupo <span class="text-blue-600">Popular</span> en Diputación</h3>
+                    <p class="text-sm font-semibold mb-2 text-blue-600">grupopp@malaga.es</p>
+                    <p class="text-xs text-gray-600">Haz clic en esta tarjeta para **COPIAR** la dirección.</p>
+                </div>
+
+                <!-- Tarjeta 2: Redes Sociales -->
+                <div class="bg-white text-gray-900 p-6 rounded-xl shadow-2xl transition duration-300 hover:scale-[1.03]">
+                    <span class="text-4xl mb-3 block">📲</span>
+                    <h3 class="text-xl font-bold mb-2">Comparte en Redes</h3>
+                    <p class="text-sm">Usa el hashtag #ExamenesEnRiesgo y etiqueta al <strong class="text-blue-600">PP</strong> de Málaga.</p>
+                </div>
+
+                <!-- Tarjeta 3: Informa a tus vecinos (Contenido Modificado) -->
+                <div class="bg-white text-gray-900 p-6 rounded-xl shadow-2xl transition duration-300 hover:scale-[1.03]">
+                    <span class="text-4xl mb-3 block">🗣️</span>
+                    <h3 class="text-xl font-bold mb-2">Informa a tus vecinos</h3>
+                    <p class="text-sm">Ayuda a difundir esta información a quienes están sacándose el carné... o están a punto de hacerlo.</p>
+                </div>
+            </div>
+
+            <!-- Botón de compartir en WhatsApp (Simulado) -->
+            <a href="whatsapp://send?text=🚨 ¡ALERTA! Exámenes de Conducir en Ronda en riesgo por la negativa de la alcaldesa. La mayoría del PP en Diputación VOTA EN CONTRA de rescatar el servicio. Exige una rectificación: [URL_DE_ESTA_PAGINA]" 
+               target="_blank" 
+               class="inline-block mt-10 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl uppercase tracking-wider transition duration-300">
+                Compartir Alerta por WhatsApp
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- MENSAJE DE COPIADO AL PORTAPAPELES -->
+    <div id="copy-message" class="bg-green-600">Copiado al portapapeles</div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-sm">
+            <p class="text-center">&copy; 2025 Información basada en la Moción del Grupo Socialista de la Diputación de Málaga y el resultado de su votación.</p>
+            <p class="mt-2 text-center">Promoviendo la Cohesión Territorial en Ronda.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para la funcionalidad de copia -->
+    <script>
+        // Función para copiar texto al portapapeles y mostrar la notificación
+        function copyEmailToClipboard(email, event) {
+            // Previene la navegación si se estuviera usando un enlace (aunque aquí usamos un div)
+            event.preventDefault(); 
+            
+            // Usa execCommand('copy') como fallback para entornos de iframe
+            const el = document.createElement('textarea');
+            el.value = email;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            // Muestra el mensaje de copiado
+            const message = document.getElementById('copy-message');
+            message.style.opacity = '1';
+
+            // Oculta el mensaje después de 2 segundos
+            setTimeout(() => {
+                message.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
